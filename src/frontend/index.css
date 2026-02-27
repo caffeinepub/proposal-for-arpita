@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+    /* Romantic gradient background: soft blush to rose */
+    --background: 0.96 0.08 15;
+    --foreground: 0.25 0.05 15;
+    /* Card with soft pink glow */
+    --card: 0.98 0.06 10;
+    --card-foreground: 0.25 0.05 15;
+    --popover: 0.98 0.06 10;
+    --popover-foreground: 0.25 0.05 15;
+    /* Primary: Deep romantic rose */
+    --primary: 0.55 0.22 15;
+    --primary-foreground: 0.99 0 0;
+    /* Secondary: Soft lavender pink */
+    --secondary: 0.85 0.12 340;
+    --secondary-foreground: 0.30 0.08 340;
+    /* Muted: gentle rose mist */
+    --muted: 0.92 0.08 350;
+    --muted-foreground: 0.50 0.08 350;
+    /* Accent: vibrant fuchsia for playful interactions */
+    --accent: 0.65 0.25 330;
+    --accent-foreground: 0.99 0 0;
+    /* Destructive: passionate red */
+    --destructive: 0.55 0.24 25;
+    --destructive-foreground: 0.99 0 0;
+    --border: 0.88 0.10 350;
+    --input: 0.88 0.10 350;
+    --ring: 0.70 0.20 340;
+    --chart-1: 0.646 0.222 15;
+    --chart-2: 0.6 0.18 330;
+    --chart-3: 0.55 0.22 340;
+    --chart-4: 0.70 0.20 10;
+    --chart-5: 0.65 0.18 350;
+    --sidebar: 0.98 0.06 10;
+    --sidebar-foreground: 0.25 0.05 15;
+    --sidebar-primary: 0.55 0.22 15;
+    --sidebar-primary-foreground: 0.99 0 0;
+    --sidebar-accent: 0.92 0.08 350;
+    --sidebar-accent-foreground: 0.30 0.08 340;
+    --sidebar-border: 0.88 0.10 350;
+    --sidebar-ring: 0.70 0.20 340;
+  }
+
+  .dark {
+    /* Dark romantic mode: deep rose noir */
+    --background: 0.15 0.08 340;
+    --foreground: 0.95 0.05 350;
+    --card: 0.20 0.10 340;
+    --card-foreground: 0.95 0.05 350;
+    --popover: 0.22 0.10 340;
+    --popover-foreground: 0.95 0.05 350;
+    /* Primary: Bright romantic rose */
+    --primary: 0.75 0.22 15;
+    --primary-foreground: 0.15 0.08 340;
+    /* Secondary: Soft lavender */
+    --secondary: 0.35 0.15 330;
+    --secondary-foreground: 0.95 0.05 350;
+    /* Muted tones */
+    --muted: 0.30 0.12 340;
+    --muted-foreground: 0.65 0.10 350;
+    /* Accent: vibrant fuchsia */
+    --accent: 0.60 0.25 320;
+    --accent-foreground: 0.95 0 0;
+    /* Destructive */
+    --destructive: 0.60 0.24 25;
+    --destructive-foreground: 0.15 0.08 340;
+    --border: 0.30 0.12 340;
+    --input: 0.30 0.12 340;
+    --ring: 0.65 0.20 330;
+    --chart-1: 0.70 0.22 15;
+    --chart-2: 0.65 0.20 330;
+    --chart-3: 0.60 0.22 320;
+    --chart-4: 0.75 0.18 10;
+    --chart-5: 0.70 0.18 340;
+    --sidebar: 0.20 0.10 340;
+    --sidebar-foreground: 0.95 0.05 350;
+    --sidebar-primary: 0.75 0.22 15;
+    --sidebar-primary-foreground: 0.15 0.08 340;
+    --sidebar-accent: 0.30 0.12 340;
+    --sidebar-accent-foreground: 0.95 0.05 350;
+    --sidebar-border: 0.30 0.12 340;
+    --sidebar-ring: 0.65 0.20 330;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
